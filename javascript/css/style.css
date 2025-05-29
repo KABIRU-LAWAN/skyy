@@ -1,0 +1,353 @@
+
+ html, body {
+   
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: "Poppins", serif;
+  font-style: normal;
+  
+  
+}
+/* Keep box-sizing consistent */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+ /* Responsive font-size 4 header & paragrap */
+
+h1 {
+  font-size: clamp(1.75rem, 4.5vw, 3.5rem);
+  font-family: "Poppins", serif;
+  font-weight: 700 !important;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: clamp(1rem, 3.5vw, 2.5rem);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: clamp(0.9rem, 3vw, 2rem);
+  font-weight: 500;
+}
+
+p {
+  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+  font-family: "Inter", serif;
+}
+
+/* Navbar styling */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #AC1754;
+  padding: 15px 20px;
+  
+}
+
+.navbar-nav{
+  justify-content: space-between;
+  margin: auto;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.navbar-nav .nav-item .nav-link{
+  color: white;
+}
+
+.nav-button{
+  padding: 10px 0;
+  font-size: 0.9rem;
+  margin: 10px;
+  text-transform: capitalize;
+}
+
+.nav-button:hover{
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.log-btn, .reg-btn{
+  text-transform: capitalize;
+}
+
+.log-btn:hover{
+  opacity: 0.5;
+ transition: 0.5s ease;
+}
+
+.reg-btn:hover{
+  opacity: 0.5;
+ transition: 0.5s ease;
+}
+
+.nav-buttons{
+  position: fixed;
+  width: 100%;
+}
+.collapse{
+  background-color: #E53888 !important;
+  border-radius: 5px;
+}
+
+/* Change navbar background to green when scrolled */
+.navbar.scrolled {
+  margin-top: 0;
+  padding-top: 1.5rem;
+}
+
+.nav-button{
+  padding: clamp(0.3rem, 0.8vw, 1rem) clamp(0.5rem, 1vw, 1.5rem);
+}
+.nav-item {
+  list-style: none;
+}
+
+.navbar-brand {
+  font-family: "Poppins", serif;
+  color: white !important;
+  font-weight: 600;
+}
+
+.navbar-brand:hover {
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+/* Hero Section */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;  /*Ensure text is visible */
+  background-color: #AC1754;
+}
+
+  .hero-container{
+    /*background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #AC1754;
+    padding: 7% 15%;
+  
+}
+
+.hero-container p {
+  font-family: "Inter", serif;
+  color: #e6e6e6;
+  /* font-size: clamp(1rem, 2vw, 2rem) !important;*/
+} 
+
+.hero-btn-container{
+  position: relative;
+  padding: 50px;
+}
+
+
+.hero-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 55%;
+  padding: 0.5rem 3rem;
+  margin-left: -7rem;
+  background-color: #E53888;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.hero-btn:hover {
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+/* About us */
+
+.about-us-container{
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.about-us-container .row{
+  padding-top: 30px;
+  text-align: left;
+}
+
+about-img{
+  height: auto;
+}
+.about-us-container .col-lg-4 img {
+  width: 100%;/* Make the image responsive within the column */ 
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure it fits well inside its container */
+  /* outline: 5px solid green; */
+  border-radius: 5px;
+}
+
+ /* Services container */
+
+ .services-container{
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.services-container img {
+  max-width: 100%;/* Make the image responsive within the column */ 
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure it fits well inside its container */
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.services-container .col-lg-4 {
+  text-align: left;
+  padding: 30px 10px;
+}
+
+.services-container .col-lg-4 {
+  padding: 20px;
+}
+.services-container .col-lg-4 img {
+  width: 100%;/* Make the image responsive within the column */ 
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure it fits well inside its container */
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.services-container .col-lg-4 {
+  text-align: left;
+  padding: 30px 10px;
+}
+
+.services-container .col-lg-4 {
+  padding: 20px;
+}
+
+/* Pricing Table Styling */
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7% 15%;
+}
+
+.data {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.data h2 {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.data-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.data-plan {
+  /* background: #ffffff; */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.data-plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.data-plan img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.data-plan h4 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.data-plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  border-bottom: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.data-plan ul li {
+  font-size: 16px;
+  padding: 5px 0;
+  color: #666;
+}
+
+.data-plan ul li:nth-child(2) {
+  font-weight: bold;
+  color: #000;
+}
+
+.data-plan a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.data-plan a:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Section Styling */
+
+#footer-section{
+  padding: 7% 15%;
+}
+
+.footer2{
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  margin-bottom: 0;
+  color:#AC1754;
+  font-weight: 700;
+  font-size: clamp(0.5rem 1.5vw 1rem);
+  padding-top: 10%;
+  padding-bottom: -10%;
+}
+

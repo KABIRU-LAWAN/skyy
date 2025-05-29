@@ -1,0 +1,25 @@
+ /*  */
+
+ /* Responsive adjustments */
+@media (max-width: 850px) {
+  .form-container {
+      padding: 15px;
+  }
+  .form-input {
+      font-size: 14px;
+      padding: 8px;
+  }
+  .form-button {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 768px){
+  .navbar-nav{
+    display: none;
+  }
+
+  .nav-button{
+    display: none;
+  }
+}
