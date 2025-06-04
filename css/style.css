@@ -129,11 +129,12 @@
   .hero-section {
     display: flex;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     text-align: center;
     color: white;  /*Ensure text is visible */
     background-color: #AC1754;
+    /* margin-top: -35%; */
   }
 
     .hero-container{
@@ -143,9 +144,8 @@
       align-items: center;
       justify-content: center;
       background-color: #AC1754;
-      /* padding: 5% 15%; */
-      padding: 50px;
-      margin-top: -10%;
+      padding: 80px 15%;
+      
   }
 
   .hero-container p {
